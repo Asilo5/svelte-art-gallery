@@ -17,6 +17,7 @@
 
   h1 {
     font-family: 'Trade Winds', cursive;
+    font-size: 20px;
   }
 	
 </style>
