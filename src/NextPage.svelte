@@ -1,5 +1,6 @@
 <script>
-  
+    export let pageNumber;
+    export let nextGallery;
 </script>
 
 

@@ -1,12 +1,14 @@
 <script>
   import NextPage from './NextPage.svelte';
+  export let pageNumber;
+  export let nextGallery;
   
 </script>
 
 <nav> 
   <h1>La Lumbrera</h1>
   <div>
-     <NextPage /> 
+     <NextPage nextGallery={nextGallery} pageNumber={pageNumber}/> 
      <p>Favourites</p>
   </div>
 </nav>
