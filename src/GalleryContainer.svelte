@@ -4,11 +4,13 @@
 </script>
 
 <section class='gallery'>
+   <p>↠</p>
    {#each arts as art}
         <section class='paintings'>
             <img src={art.baseimageurl} alt='paintings'/>
         </section>
    {/each}
+   <p>↞</p>
 </section>
 
 <style>
@@ -32,5 +34,10 @@
 
     img {
         height: 30em;
+    }
+
+    p {
+        margin: 5px;
+        font-size: 5em;
     }
 </style>
