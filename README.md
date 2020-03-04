@@ -1,6 +1,6 @@
 # La Lumbrera 🎨
 
-La Lumbrera is an website built with Svelte that allows users to view the beautiful artwork the Hardvard Museum has to offer.
+La Lumbrera is an website built with Svelte that allows users to view the beautiful artwork the Harvard Art Museum has to offer.
 
 ## View La Lumbrera locally in your computer
 
@@ -14,7 +14,7 @@ To open the app on your web server run ``` $ npm run dev ``` and head over to ``
 
 La Lumbrera was built using:
   - Svelte
-  - [Hardvard Museums API](https://www.harvardartmuseums.org/collections/api)
+  - [Harvard Art Museums API](https://www.harvardartmuseums.org/collections/api)
   
 ## Images of La Lumbrera
 
