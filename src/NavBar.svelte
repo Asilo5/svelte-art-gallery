@@ -19,5 +19,9 @@
     font-family: 'Trade Winds', cursive;
     font-size: 20px;
   }
+
+  p {
+    font-weight: 100;
+  }
 	
 </style>
