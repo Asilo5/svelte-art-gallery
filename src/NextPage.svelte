@@ -7,14 +7,14 @@
 <section>
     <button on:click={() => {
         console.log(pageNumber)
-        pageNumber--;
+        pageNumber-=1;
         nextGallery();
         }}> Previous Art </button>
 
 
     <button on:click={() => {
         console.log(pageNumber)
-        pageNumber++;
+        pageNumber+=1;
         nextGallery();
         }} > Next Art</button>
 </section>

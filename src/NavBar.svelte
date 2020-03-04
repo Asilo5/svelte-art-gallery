@@ -8,8 +8,9 @@
 <nav> 
   <h1>La Lumbrera</h1>
   <div>
+     <p>Page {pageNumber} </p>
      <NextPage nextGallery={nextGallery} pageNumber={pageNumber}/> 
-     <p>Favourites</p>
+     <!-- <p>Favourites</p> -->
   </div>
 </nav>
 
@@ -30,6 +31,7 @@
 
   p {
     font-weight: 100;
+    margin-right: 5em;
   }
 
   div {
