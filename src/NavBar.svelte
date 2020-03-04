@@ -12,7 +12,9 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    box-shadow: 0 10px 5px -10px gray;
+    box-shadow: 0 5px 5px -3px gray;
+    position: relative;
+    z-index: 1;
   }
 
   h1 {
