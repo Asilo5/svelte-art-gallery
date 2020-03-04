@@ -6,9 +6,17 @@
 
 <section>
     <button on:click={() => {
+        console.log(pageNumber)
+        pageNumber--;
+        nextGallery();
+        }}> Previous Art </button>
+
+
+    <button on:click={() => {
+        console.log(pageNumber)
         pageNumber++;
         nextGallery();
-        }} > Next Page</button>
+        }} > Next Art</button>
 </section>
 
 <style>
