@@ -2,9 +2,10 @@
   
 </script>
 
-<main>
-
-</main>
+<nav> 
+  <h1>La Lumbrera</h1>
+  <p>Favourites</p>
+</nav>
 
 <style>
 	

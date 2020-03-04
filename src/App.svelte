@@ -1,5 +1,6 @@
 <script>
   	import { onMount } from 'svelte';
+	import  NavBar from './NavBar.svelte';
 
 	let arts = [];
 
@@ -12,6 +13,7 @@
 </script>
 
 <main>
+  <NavBar />
 
 
 </main>
