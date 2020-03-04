@@ -1,12 +1,14 @@
 <script>
   export let arts;
-
-  console.log('gallery', arts)
   
 </script>
 
 <section class='gallery'>
-  <p> {arts} </p>
+   {#each arts as art}
+        <section>
+            <img src={art.baseimageurl} alt='paintings'/>
+        </section>
+   {/each}
 </section>
 
 <style>
