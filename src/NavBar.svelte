@@ -1,10 +1,17 @@
 <script>
+  import NextPage from './NextPage.svelte';
+  export let pageNumber;
+  export let nextGallery;
   
 </script>
 
 <nav> 
   <h1>La Lumbrera</h1>
-  <p>Favourites</p>
+  <div>
+     <p>Page {pageNumber} </p>
+     <NextPage nextGallery={nextGallery} pageNumber={pageNumber}/> 
+     <!-- <p>Favourites</p> -->
+  </div>
 </nav>
 
 <style>
@@ -24,6 +31,11 @@
 
   p {
     font-weight: 100;
+    margin-right: 5em;
+  }
+
+  div {
+    display: flex;
   }
 	
 </style>

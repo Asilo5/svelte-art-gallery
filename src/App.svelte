@@ -4,14 +4,7 @@
 	import GalleryContainer from './GalleryContainer.svelte';
 
 	let arts = [];
-
-	// onMount(async () => {
-		// const res = await fetch(`https://api.harvardartmuseums.org/image?apikey=30de38c0-5cb4-11ea-9401-ed9c8b78a90d`);
-		// let allPaints = await res.json();
-		// arts = allPaints.records;
-		// arts.push(...allPaints.records);
-		// console.log('arts', arts)   
-	// });
+	let pageNumber = 2;
 
 	onMount( () => {
 		fetch(`https://api.harvardartmuseums.org/object?apikey=30de38c0-5cb4-11ea-9401-ed9c8b78a90d`)
@@ -19,10 +12,18 @@
 		.then(data => arts = data.records)
 		.then(error => console.log(error))
 	})
+
+	const nextGallery = () => {
+		fetch(`https://api.harvardartmuseums.org/object?apikey=30de38c0-5cb4-11ea-9401-ed9c8b78a90d&page=${pageNumber}`)
+		.then(res => res.json())
+		.then(data => arts = data.records)
+		.then(error => console.log(error))
+	}
+
 </script>
 
 <main>
-  <NavBar />
+  <NavBar nextGallery={nextGallery} pageNumber={pageNumber} />
   <GalleryContainer arts={arts} />
 
 
