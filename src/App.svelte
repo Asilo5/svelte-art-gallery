@@ -24,12 +24,19 @@
 
 <main>
   <NavBar nextGallery={nextGallery} pageNumber={pageNumber} />
+  {#if arts.length === 0}
+    <img src='https://i.pinimg.com/originals/a4/f2/cb/a4f2cb80ff2ae2772e80bf30e9d78d4c.gif' alt='loading giph' /> 
+  {:else}
   <GalleryContainer arts={arts} />
+  {/if}
 
 
 </main>
 
 <style>
-
+  img {
+	display: block;
+	margin: 15em auto;
+  }
 	
 </style>
