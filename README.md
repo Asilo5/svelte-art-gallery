@@ -1,4 +1,4 @@
-# La Lumbrera
+# La Lumbrera 🎨
 
 La Lumbrera is an website built with Svelte that allows users to view the beautiful artwork the Hardvard Museum has to offer.
 
