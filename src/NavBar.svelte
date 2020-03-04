@@ -29,5 +29,9 @@
   p {
     font-weight: 100;
   }
+
+  div {
+    display: flex;
+  }
 	
 </style>
