@@ -5,7 +5,10 @@
 
 
 <section>
-    <button> Next Page</button>
+    <button on:click={() => {
+        pageNumber++;
+        nextGallery();
+        }} > Next Page</button>
 </section>
 
 <style>
