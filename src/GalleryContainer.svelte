@@ -1,12 +1,12 @@
 <script>
-  let arts;
+  export let arts;
 
   console.log('gallery', arts)
   
 </script>
 
 <section class='gallery'>
-  <p> innit </p>
+  <p> {arts} </p>
 </section>
 
 <style>
