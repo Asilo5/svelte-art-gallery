@@ -1,5 +1,7 @@
 <script>
   let arts;
+
+  console.log('gallery', arts)
   
 </script>
 

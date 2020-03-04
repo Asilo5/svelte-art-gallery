@@ -15,7 +15,7 @@
 
 <main>
   <NavBar />
-  <GalleryContainer />
+  <GalleryContainer arts={arts} />
 
 
 </main>
