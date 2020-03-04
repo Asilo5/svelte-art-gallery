@@ -23,7 +23,7 @@
 </script>
 
 <main>
-  <NavBar />
+  <NavBar nextGallery={nextGallery} />
   <GalleryContainer arts={arts} />
 
 
