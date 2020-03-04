@@ -7,8 +7,10 @@
    <p>↠</p>
    {#each arts as art}
         <section class='paintings'>
+            <p class='culture'>{art.title}</p>
             <img src={art.images[0].baseimageurl} alt='paintings'/>
             <p class='culture'>Culture: {art.culture}</p>
+            <p class='culture'>Dated: {art.dated} </p>
         </section>
    {/each}
    <p>↞</p>
@@ -22,7 +24,6 @@
         display: flex;
         /* justify-content: center; */
         /* flex-wrap: wrap; */
-        align-items: center;
         overflow-x: scroll;
     }
 
