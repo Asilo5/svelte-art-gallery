@@ -7,7 +7,8 @@
    <p>↠</p>
    {#each arts as art}
         <section class='paintings'>
-            <img src={art.baseimageurl} alt='paintings'/>
+            <img src={art.images[0].baseimageurl} alt='paintings'/>
+            <p class='culture'>Culture: {art.culture}</p>
         </section>
    {/each}
    <p>↞</p>
@@ -34,6 +35,10 @@
 
     img {
         height: 30em;
+    }
+
+    .culture {
+        font-size: 20px;
     }
 
     p {
