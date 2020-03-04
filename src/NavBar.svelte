@@ -1,10 +1,14 @@
 <script>
+  import NextPage from './NextPage.svelte';
   
 </script>
 
 <nav> 
   <h1>La Lumbrera</h1>
-  <p>Favourites</p>
+  <div>
+     <NextPage /> 
+     <p>Favourites</p>
+  </div>
 </nav>
 
 <style>
