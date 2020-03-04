@@ -14,7 +14,7 @@
 	// });
 
 	onMount( () => {
-		fetch(`https://api.harvardartmuseums.org/image?apikey=30de38c0-5cb4-11ea-9401-ed9c8b78a90d`)
+		fetch(`https://api.harvardartmuseums.org/object?apikey=30de38c0-5cb4-11ea-9401-ed9c8b78a90d`)
 		.then(res => res.json())
 		.then(data => arts = data.records)
 		.then(error => console.log(error))
